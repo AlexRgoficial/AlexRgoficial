@@ -1,15 +1,15 @@
 run KHP;
 use = web;
-{
-   spawn.text = ("hola mundo"){
-      size = tall 20px && ancher 40px;
+doc.elements{
+   doc.spawn.text = ("hola mundo"){
+      size = 20px * 40px;
       type: Verdana;
       color: #yellow;
    }
    
-   spawn.button = ("Click me!"){
-      border-color: blue;
+   doc.spawn.button = ("Click me!"){
+      border-color: #blue;
       message = "vas a ir a file.html";
-      go = "file.html";
+      go-click = "file.html";
    }
 }
